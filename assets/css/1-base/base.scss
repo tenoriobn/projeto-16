@@ -1,0 +1,17 @@
+@import './reset';
+@import './variaveis';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import '../2-componentes/1-header';
+@import '../2-componentes/2-card-section';
+
+body {
+    background-color: $VeryDarkBlue;
+    @include font-styling($White, .875rem, 400);
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        padding: 0 1.5rem;
+    }
+}
