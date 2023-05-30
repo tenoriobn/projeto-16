@@ -1,1 +1,57 @@
 @import '../1-base/variaveis';
+
+.header {
+    padding-top: 2.5rem;
+
+    &__branding {
+        border-bottom: 1px solid $DesaturatedBlue;
+        margin-bottom: 1.5rem;
+
+        .header__title {
+            @include font-styling($White, 1.5rem, 700);
+            margin-bottom: .75rem;
+        }
+
+        .header__followers {
+            @include font-styling($DesaturatedBlue, .875rem, 700);
+            padding-bottom: 1.75rem;
+        }
+    }
+
+    &__dark-mode {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.5rem;
+
+        &-label {
+            @include font-styling($DesaturatedBlue, .875rem, 700);
+        }
+        
+        &-switch {
+            background-image: linear-gradient(to right, hsl(210, 78%, 56%) 10%, hsl(146, 68%, 55%) 100%);
+            display: inline-block;
+            position: relative;
+            width: 48px;
+            height: 24px;
+            border-radius: 1.5rem;
+
+            .checkbox {
+                /* Estilização do input checkbox */
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: $DarkDesaturatedBlue;
+                position: absolute;
+                transform: translateY(-5%);
+                top: 0px;
+                left: 0px;
+            }
+            
+            .checkbox:checked {
+                background-color: $White;
+            }
+        }
+    }
+}

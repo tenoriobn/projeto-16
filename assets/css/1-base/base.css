@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
     License: none (public domain)
@@ -67,6 +68,62 @@ table {
 /*Light Theme*/
 /* Font */
 /* Mixins */
+.header {
+  padding-top: 2.5rem;
+}
+.header__branding {
+  border-bottom: 1px solid hsl(228, 34%, 66%);
+  margin-bottom: 1.5rem;
+}
+.header__branding .header__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.header__branding .header__followers {
+  color: hsl(228, 34%, 66%);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding-bottom: 1.75rem;
+}
+.header__dark-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.header__dark-mode-label {
+  color: hsl(228, 34%, 66%);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.header__dark-mode-switch {
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%) 10%, hsl(146, 68%, 55%) 100%);
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 24px;
+  border-radius: 1.5rem;
+}
+.header__dark-mode-switch .checkbox {
+  /* Estilização do input checkbox */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(228, 28%, 20%);
+  position: absolute;
+  transform: translateY(-5%);
+  top: 0px;
+  left: 0px;
+}
+.header__dark-mode-switch .checkbox:checked {
+  background-color: hsl(0, 0%, 100%);
+}
+
 /*Colors */
 /*info card*/
 /*borda card social*/
@@ -76,6 +133,7 @@ table {
 /* Mixins */
 body {
   background-color: hsl(232, 19%, 15%);
+  font-family: "Inter", sans-serif;
   color: hsl(0, 0%, 100%);
   font-size: 0.875rem;
   font-weight: 400;
