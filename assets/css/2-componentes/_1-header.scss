@@ -2,6 +2,7 @@
 
 .header {
     padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
 
     &__branding {
         border-bottom: 1px solid $DesaturatedBlue;
@@ -22,7 +23,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 2.5rem;
 
         &-label {
             @include font-styling($DesaturatedBlue, .875rem, 700);

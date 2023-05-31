@@ -70,6 +70,7 @@ table {
 /* Mixins */
 .header {
   padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .header__branding {
   border-bottom: 1px solid hsl(228, 34%, 66%);
@@ -91,7 +92,6 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.5rem;
 }
 .header__dark-mode-label {
   color: hsl(228, 34%, 66%);
@@ -131,13 +131,148 @@ table {
 /*Light Theme*/
 /* Font */
 /* Mixins */
+.main .card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3.25rem;
+}
+.main .card-section .card {
+  background-color: hsl(228, 28%, 20%);
+  border-top: 0.25rem solid hsl(208, 92%, 53%);
+  border-radius: 0.25rem;
+  padding: 1.75rem 0 1.5rem 0;
+}
+.main .card-section .card__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+.main .card-section .card__info .card__icon {
+  background-image: url(../../img/icon-facebook.svg);
+  background-repeat: no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.main .card-section .card__info .card__username {
+  color: hsl(228, 34%, 66%);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.main .card-section .card__followers {
+  color: hsl(0, 0%, 100%);
+  font-size: 3.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.main .card-section .card__followers-label {
+  color: hsl(228, 34%, 66%);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.42rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.main .card-section .card__today {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.main .card-section .card__today .card__icon {
+  background-image: url(../../img/icon-up.svg);
+  background-repeat: no-repeat;
+  width: 0.5rem;
+  height: 0.25rem;
+}
+.main .card-section .card__today-count {
+  color: hsl(227, 47%, 96%);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/*Colors */
+/*info card*/
+/*borda card social*/
+/*Dark Theme*/
+/*Light Theme*/
+/* Font */
+/* Mixins */
+.main .overview-section {
+  padding-bottom: 2.75rem;
+}
+.main .overview-section__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+}
+.main .overview-section .card__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main .overview-section .card__container .card {
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+}
+.main .overview-section .card__container .card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.main .overview-section .card__container .card__info .card__label {
+  color: hsl(228, 34%, 66%);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.main .overview-section .card__container .card__info .card__icon {
+  background-image: url(../../img/icon-facebook.svg);
+  background-repeat: no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.main .overview-section .card__container .card__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .overview-section .card__container .card__data .card__value {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.main .overview-section .card__container .card__data .card__change {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+}
+.main .overview-section .card__container .card__data .card__change .card__icon {
+  background-image: url(../../img/icon-up.svg);
+  background-repeat: no-repeat;
+  width: 0.5rem;
+  height: 0.25rem;
+}
+.main .overview-section .card__container .card__data .card__change .card__percentage {
+  color: hsl(163, 72%, 41%);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
 body {
   background-color: hsl(232, 19%, 15%);
+  background-image: linear-gradient(to bottom, hsl(232, 19%, 15%) 28%, hsl(230, 17%, 14%) 28%);
   font-family: "Inter", sans-serif;
   color: hsl(0, 0%, 100%);
   font-size: 0.875rem;
   font-weight: 400;
   padding: 0 1rem;
+  height: 100vh;
 }
 
 @media screen and (min-width: 375px) {

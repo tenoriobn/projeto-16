@@ -3,12 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import '../2-componentes/1-header';
 @import '../2-componentes/2-card-section';
+@import '../2-componentes/3-overview-section';
 
 body {
     background-color: $VeryDarkBlue;
+    background-image: linear-gradient(to bottom, $VeryDarkBlue 28%, $DarkBlue 28%);
     font-family: $inter;
     @include font-styling($White, .875rem, 400);
     padding: 0 1rem;
+
+    height: 100vh;
 }
 
 @media screen and (min-width: 375px) {

@@ -1,1 +1,68 @@
 @import '../1-base/variaveis';
+
+.main {
+    .card-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 3.25rem;
+
+        .card {
+            background-color: $DarkDesaturatedBlue;
+            border-top: .25rem solid $Facebook;
+            border-radius: .25rem;
+
+            padding: 1.75rem 0 1.5rem 0;
+
+            &__info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .5rem;
+                margin-bottom: 1.75rem;
+
+                .card__icon {
+                    background-image: url(../../img/icon-facebook.svg);
+                    background-repeat: no-repeat;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+
+                .card__username {
+                    @include font-styling($DesaturatedBlue, .75rem, 700);
+                }
+            }
+
+            &__followers {
+                @include font-styling($White, 3.25rem, 700);
+                text-align: center;
+                margin-bottom: .75rem;
+            }
+
+            &__followers-label {
+                @include font-styling($DesaturatedBlue, .75rem, 400);
+                letter-spacing: 0.42rem;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            &__today {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .25rem;
+
+                .card__icon {
+                    background-image: url(../../img/icon-up.svg);
+                    background-repeat: no-repeat;
+                    width: .5rem;
+                    height: .25rem;
+                }
+
+                &-count {
+                    @include font-styling($LightGrayishBlue, .75rem, 700);
+                }
+            }
+        }
+    }
+}
