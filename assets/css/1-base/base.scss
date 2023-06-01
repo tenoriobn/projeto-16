@@ -6,8 +6,7 @@
 @import '../2-componentes/3-overview-section';
 
 body {
-    background-color: $VeryDarkBlue;
-    background-image: linear-gradient(to bottom, $VeryDarkBlue 28%, $DarkBlue 28%);
+    background-color: $DarkBlue;
     font-family: $inter;
     @include font-styling($White, .875rem, 400);
     padding: 0 1rem;
@@ -18,5 +17,22 @@ body {
 @media screen and (min-width: 375px) {
     body {
         padding: 0 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0 1.5rem;
+        padding: 0 .75rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 0;
+        width: 80%;
     }
 }

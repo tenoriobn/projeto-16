@@ -67,3 +67,30 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .main {
+        .overview-section {
+            padding-bottom: 4.75rem;
+
+            .card__container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        .overview-section {
+            padding-bottom: 0px;
+
+            .card__container {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 1.875rem;
+            }
+        }
+    }
+}
