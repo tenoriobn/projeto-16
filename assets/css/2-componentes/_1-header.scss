@@ -5,18 +5,49 @@
     margin-bottom: 2.5rem;
     position: relative;
 
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw; /* Usamos vw (viewport width) para garantir a largura total */
+        height: 29vh; /* Ajuste a altura desejada */
+        background-color: $VeryDarkBlue;
+        z-index: -1;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    &.light {
+        &::after {
+            background-color: $VeryPaleBlue;
+        }
+    }
+
     &__branding {
         border-bottom: 1px solid $DesaturatedBlue;
         margin-bottom: 1.5rem;
 
+        &.light {
+            border-color: DarkGrayishBlue;
+        }
+
         .header__title {
             @include font-styling($White, 1.5rem, 700);
             margin-bottom: .75rem;
+
+            &.light {
+                color: $VeryDarkBlue;
+            }
         }
 
         .header__followers {
             @include font-styling($DesaturatedBlue, .875rem, 700);
             padding-bottom: 1.75rem;
+
+            &.light {
+                color: $DarkGrayishBlue;
+            }
         }
     }
 
@@ -27,6 +58,10 @@
 
         &-label {
             @include font-styling($DesaturatedBlue, .875rem, 700);
+
+            &.light {
+                color: $ToggleLightTheme;
+            }
         }
         
         &-switch {
@@ -41,34 +76,26 @@
             .checkbox {
                 /* Estilização do input checkbox */
                 appearance: none;
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
                 border-radius: 50%;
                 background-color: $DarkDesaturatedBlue;
                 position: absolute;
-                transform: translateY(-5%);
+                transform: translate(-50%);
                 top: 0px;
-                left: 0px;
+                left: 8px;
                 cursor: pointer;
+
+                &:checked {
+                    background-color: $White;
+                    left: 31.4px;
+                }
             }
-            
-            .checkbox:checked {
-                background-color: $White;
+
+            &.light {
+                background-image: linear-gradient(to right, $ToggleLightTheme 10%, $ToggleLightTheme 100%);
             }
         }
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100vw; /* Usamos vw (viewport width) para garantir a largura total */
-        height: 29vh; /* Ajuste a altura desejada */
-        background-color: $VeryDarkBlue;
-        z-index: -1;
-        border-radius: 0 0 1rem 1rem;
     }
 }
 
@@ -84,7 +111,7 @@
             margin-bottom: 0;
 
             .header__title {
-                @include font-styling($White, 1.75rem, 700);
+                @include font-styling('', 1.75rem, 700);
             }
     
             .header__followers {

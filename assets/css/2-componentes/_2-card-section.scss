@@ -14,6 +14,10 @@
 
             padding: 1.75rem 0 1.5rem 0;
 
+            &.light {
+                background-color: $LightGrayishBlue;
+            }
+
             &__info {
                 display: flex;
                 justify-content: center;
@@ -30,6 +34,10 @@
 
                 .card__username {
                     @include font-styling($DesaturatedBlue, .75rem, 700);
+
+                    &.light {
+                        color: $DarkGrayishBlue;
+                    }
                 }
             }
 
@@ -37,6 +45,10 @@
                 @include font-styling($White, 3.25rem, 700);
                 text-align: center;
                 margin-bottom: .75rem;
+
+                &.light {
+                    color: $VeryDarkBlue;
+                }
             }
 
             &__followers-label {
@@ -44,6 +56,11 @@
                 letter-spacing: 0.42rem;
                 text-align: center;
                 margin-bottom: 2rem;
+                text-transform: uppercase;
+
+                &.light {
+                    color: $DarkGrayishBlue;
+                }
             }
 
             &__today {
@@ -61,6 +78,10 @@
 
                 &-count {
                     @include font-styling($LightGrayishBlue, .75rem, 700);
+
+                    &.light {
+                        color: $LimeGreen;
+                    }
                 }
             }
         }

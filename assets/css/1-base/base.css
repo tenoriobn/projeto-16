@@ -73,9 +73,27 @@ table {
   margin-bottom: 2.5rem;
   position: relative;
 }
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw; /* Usamos vw (viewport width) para garantir a largura total */
+  height: 29vh; /* Ajuste a altura desejada */
+  background-color: hsl(232, 19%, 15%);
+  z-index: -1;
+  border-radius: 0 0 1rem 1rem;
+}
+.header.light::after {
+  background-color: hsl(225, 100%, 98%);
+}
 .header__branding {
   border-bottom: 1px solid hsl(228, 34%, 66%);
   margin-bottom: 1.5rem;
+}
+.header__branding.light {
+  border-color: DarkGrayishBlue;
 }
 .header__branding .header__title {
   color: hsl(0, 0%, 100%);
@@ -83,11 +101,17 @@ table {
   font-weight: 700;
   margin-bottom: 0.75rem;
 }
+.header__branding .header__title.light {
+  color: hsl(232, 19%, 15%);
+}
 .header__branding .header__followers {
   color: hsl(228, 34%, 66%);
   font-size: 0.875rem;
   font-weight: 700;
   padding-bottom: 1.75rem;
+}
+.header__branding .header__followers.light {
+  color: hsl(228, 12%, 44%);
 }
 .header__dark-mode {
   display: flex;
@@ -98,6 +122,9 @@ table {
   color: hsl(228, 34%, 66%);
   font-size: 0.875rem;
   font-weight: 700;
+}
+.header__dark-mode-label.light {
+  color: hsl(230, 22%, 74%);
 }
 .header__dark-mode-switch {
   background-image: linear-gradient(to right, hsl(210, 78%, 56%) 10%, hsl(146, 68%, 55%) 100%);
@@ -113,30 +140,22 @@ table {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background-color: hsl(228, 28%, 20%);
   position: absolute;
-  transform: translateY(-5%);
+  transform: translate(-50%);
   top: 0px;
-  left: 0px;
+  left: 8px;
   cursor: pointer;
 }
 .header__dark-mode-switch .checkbox:checked {
   background-color: hsl(0, 0%, 100%);
+  left: 31.4px;
 }
-.header::after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw; /* Usamos vw (viewport width) para garantir a largura total */
-  height: 29vh; /* Ajuste a altura desejada */
-  background-color: hsl(232, 19%, 15%);
-  z-index: -1;
-  border-radius: 0 0 1rem 1rem;
+.header__dark-mode-switch.light {
+  background-image: linear-gradient(to right, hsl(230, 22%, 74%) 10%, hsl(230, 22%, 74%) 100%);
 }
 
 @media screen and (min-width: 992px) {
@@ -151,7 +170,7 @@ table {
     margin-bottom: 0;
   }
   .header__branding .header__title {
-    color: hsl(0, 0%, 100%);
+    color: "";
     font-size: 1.75rem;
     font-weight: 700;
   }
@@ -186,6 +205,9 @@ table {
   border-radius: 0.25rem;
   padding: 1.75rem 0 1.5rem 0;
 }
+.main .card-section .card.light {
+  background-color: hsl(227, 47%, 96%);
+}
 .main .card-section .card__info {
   display: flex;
   justify-content: center;
@@ -204,12 +226,18 @@ table {
   font-size: 0.75rem;
   font-weight: 700;
 }
+.main .card-section .card__info .card__username.light {
+  color: hsl(228, 12%, 44%);
+}
 .main .card-section .card__followers {
   color: hsl(0, 0%, 100%);
   font-size: 3.25rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 0.75rem;
+}
+.main .card-section .card__followers.light {
+  color: hsl(232, 19%, 15%);
 }
 .main .card-section .card__followers-label {
   color: hsl(228, 34%, 66%);
@@ -218,6 +246,10 @@ table {
   letter-spacing: 0.42rem;
   text-align: center;
   margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.main .card-section .card__followers-label.light {
+  color: hsl(228, 12%, 44%);
 }
 .main .card-section .card__today {
   display: flex;
@@ -235,6 +267,9 @@ table {
   color: hsl(227, 47%, 96%);
   font-size: 0.75rem;
   font-weight: 700;
+}
+.main .card-section .card__today-count.light {
+  color: hsl(163, 72%, 41%);
 }
 
 @media screen and (min-width: 768px) {
@@ -266,6 +301,9 @@ table {
   font-weight: 700;
   margin-bottom: 1.75rem;
 }
+.main .overview-section__title.light {
+  color: hsl(228, 12%, 44%);
+}
 .main .overview-section .card__container {
   display: flex;
   flex-direction: column;
@@ -275,6 +313,9 @@ table {
   background-color: hsl(228, 28%, 20%);
   border-radius: 0.25rem;
   padding: 1.5rem;
+}
+.main .overview-section .card__container .card.light {
+  background-color: hsl(227, 47%, 96%);
 }
 .main .overview-section .card__container .card__info {
   display: flex;
@@ -286,6 +327,9 @@ table {
   color: hsl(228, 34%, 66%);
   font-size: 0.875rem;
   font-weight: 700;
+}
+.main .overview-section .card__container .card__info .card__label.light {
+  color: hsl(228, 12%, 44%);
 }
 .main .overview-section .card__container .card__info .card__icon {
   background-image: url(../../img/icon-facebook.svg);
@@ -302,6 +346,9 @@ table {
   color: hsl(0, 0%, 100%);
   font-size: 2rem;
   font-weight: 700;
+}
+.main .overview-section .card__container .card__data .card__value.light {
+  color: hsl(232, 19%, 15%);
 }
 .main .overview-section .card__container .card__data .card__change {
   display: flex;
@@ -347,6 +394,9 @@ body {
   font-weight: 400;
   padding: 0 1rem;
   height: 100vh;
+}
+body.light {
+  background-color: hsl(0, 0%, 100%);
 }
 
 @media screen and (min-width: 375px) {

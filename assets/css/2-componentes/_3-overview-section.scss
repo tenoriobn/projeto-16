@@ -7,6 +7,10 @@
         &__title {
             @include font-styling($White, 1.5rem, 700);
             margin-bottom: 1.75rem;
+
+            &.light {
+                color: $DarkGrayishBlue;
+            }
         }
 
         .card__container {
@@ -19,6 +23,10 @@
                 border-radius: .25rem;
                 padding: 1.5rem;
 
+                &.light {
+                    background-color: $LightGrayishBlue;
+                }
+
                 &__info {
                     display: flex;
                     justify-content: space-between;
@@ -27,6 +35,10 @@
 
                     .card__label {
                         @include font-styling($DesaturatedBlue, .875rem, 700);
+
+                        &.light {
+                            color: $DarkGrayishBlue;
+                        }
                     }
 
                     .card__icon {
@@ -44,6 +56,10 @@
 
                     .card__value {
                         @include font-styling($White, 2rem, 700);
+
+                        &.light {
+                            color: $VeryDarkBlue;
+                        }
                     }
 
                     .card__change {
