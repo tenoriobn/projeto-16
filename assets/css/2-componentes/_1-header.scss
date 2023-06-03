@@ -3,7 +3,6 @@
 .header {
     padding-top: 2.5rem;
     margin-bottom: 2.5rem;
-    position: relative;
 
     &::after {
         content: '';
@@ -11,8 +10,8 @@
         top: 0%;
         left: 50%;
         transform: translateX(-50%);
-        width: 100vw; /* Usamos vw (viewport width) para garantir a largura total */
-        height: 29vh; /* Ajuste a altura desejada */
+        width: 100%; /* Usamos vw (viewport width) para garantir a largura total */
+        height: 255px; /* Ajuste a altura desejada */
         background-color: $VeryDarkBlue;
         z-index: -1;
         border-radius: 0 0 1rem 1rem;
@@ -121,14 +120,6 @@
     
         &__dark-mode {
             gap: .875rem;
-        }
-    }
-}
-
-@media screen and (min-width: 1441px) {
-    .header {    
-        &::after {
-            height: 270%; /* Ajuste a altura desejada */
         }
     }
 }
