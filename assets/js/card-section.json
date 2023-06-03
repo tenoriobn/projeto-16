@@ -1,0 +1,39 @@
+[
+    {
+        "title": "@nathanf",
+        "info": {
+            "iconsocial": "icon-facebook.svg",
+            "followers": 1987,
+            "iconcount": "icon-up.svg",
+            "count": 12
+        }
+    },
+    {
+        "title": "@nathanf",
+        "info": {
+            "iconsocial": "icon-twitter.svg",
+            "followers": 1044,
+            "iconcount": "icon-up.svg",
+            "count": 99
+        }
+    },
+    {
+        "title": "@realnathanf",
+        "info": {
+            "iconsocial": "icon-instagram.svg",
+            "followers": "11k",
+            "iconcount": "icon-up.svg",
+            "count": 1099
+        }
+    },
+    {
+        "title": "Nathan F.",
+        "info": {
+            "iconsocial": "icon-youtube.svg",
+            "followers": "8239",
+            "followerslabel": "subscribers",
+            "iconcount": "icon-up.svg",
+            "count": 144
+        }
+    }
+]
