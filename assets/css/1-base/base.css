@@ -61,6 +61,41 @@ table {
 /*Light Theme*/
 /* Font */
 /* Mixins */
+/* Social Icons */
+.icon-facebook {
+  background-image: url(../../img/icon-facebook.svg);
+}
+
+.icon-twitter {
+  background-image: url(../../img/icon-twitter.svg);
+}
+
+.icon-instagram {
+  background-image: url(../../img/icon-instagram.svg);
+}
+
+.icon-youtube {
+  background-image: url(../../img/icon-youtube.svg);
+}
+
+/* Color */
+.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.down {
+  color: hsl(356, 69%, 56%) !important;
+}
+
+/* Today Count Icons */
+.icon-up {
+  background-image: url(../../img/icon-up.svg);
+}
+
+.icon-down {
+  background-image: url(../../img/icon-down.svg);
+}
+
 /*Colors */
 /*info card*/
 /*borda card social*/
@@ -68,6 +103,41 @@ table {
 /*Light Theme*/
 /* Font */
 /* Mixins */
+/* Social Icons */
+.icon-facebook {
+  background-image: url(../../img/icon-facebook.svg);
+}
+
+.icon-twitter {
+  background-image: url(../../img/icon-twitter.svg);
+}
+
+.icon-instagram {
+  background-image: url(../../img/icon-instagram.svg);
+}
+
+.icon-youtube {
+  background-image: url(../../img/icon-youtube.svg);
+}
+
+/* Color */
+.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.down {
+  color: hsl(356, 69%, 56%) !important;
+}
+
+/* Today Count Icons */
+.icon-up {
+  background-image: url(../../img/icon-up.svg);
+}
+
+.icon-down {
+  background-image: url(../../img/icon-down.svg);
+}
+
 .header {
   padding-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -187,6 +257,41 @@ table {
 /*Light Theme*/
 /* Font */
 /* Mixins */
+/* Social Icons */
+.icon-facebook {
+  background-image: url(../../img/icon-facebook.svg);
+}
+
+.icon-twitter {
+  background-image: url(../../img/icon-twitter.svg);
+}
+
+.icon-instagram {
+  background-image: url(../../img/icon-instagram.svg);
+}
+
+.icon-youtube {
+  background-image: url(../../img/icon-youtube.svg);
+}
+
+/* Color */
+.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.down {
+  color: hsl(356, 69%, 56%) !important;
+}
+
+/* Today Count Icons */
+.icon-up {
+  background-image: url(../../img/icon-up.svg);
+}
+
+.icon-down {
+  background-image: url(../../img/icon-down.svg);
+}
+
 .main .card-section {
   display: flex;
   flex-direction: column;
@@ -210,7 +315,6 @@ table {
   margin-bottom: 1.75rem;
 }
 .main .card-section .card__info .card__icon {
-  background-image: url(../../img/icon-facebook.svg);
   background-repeat: no-repeat;
   width: 1.25rem;
   height: 1.25rem;
@@ -252,18 +356,14 @@ table {
   gap: 0.25rem;
 }
 .main .card-section .card__today .card__icon {
-  background-image: url(../../img/icon-up.svg);
   background-repeat: no-repeat;
   width: 0.5rem;
   height: 0.25rem;
 }
 .main .card-section .card__today-count {
-  color: hsl(227, 47%, 96%);
+  color: "";
   font-size: 0.75rem;
   font-weight: 700;
-}
-.main .card-section .card__today-count.light {
-  color: hsl(163, 72%, 41%);
 }
 
 @media screen and (min-width: 768px) {
@@ -286,6 +386,41 @@ table {
 /*Light Theme*/
 /* Font */
 /* Mixins */
+/* Social Icons */
+.icon-facebook {
+  background-image: url(../../img/icon-facebook.svg);
+}
+
+.icon-twitter {
+  background-image: url(../../img/icon-twitter.svg);
+}
+
+.icon-instagram {
+  background-image: url(../../img/icon-instagram.svg);
+}
+
+.icon-youtube {
+  background-image: url(../../img/icon-youtube.svg);
+}
+
+/* Color */
+.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.down {
+  color: hsl(356, 69%, 56%) !important;
+}
+
+/* Today Count Icons */
+.icon-up {
+  background-image: url(../../img/icon-up.svg);
+}
+
+.icon-down {
+  background-image: url(../../img/icon-down.svg);
+}
+
 .main .overview-section {
   padding-bottom: 2.75rem;
 }
@@ -326,7 +461,6 @@ table {
   color: hsl(228, 12%, 44%);
 }
 .main .overview-section .card__container .card__info .card__icon {
-  background-image: url(../../img/icon-facebook.svg);
   background-repeat: no-repeat;
   width: 1.25rem;
   height: 1.25rem;
@@ -350,13 +484,12 @@ table {
   gap: 0.125rem;
 }
 .main .overview-section .card__container .card__data .card__change .card__icon {
-  background-image: url(../../img/icon-up.svg);
   background-repeat: no-repeat;
   width: 0.5rem;
   height: 0.25rem;
 }
 .main .overview-section .card__container .card__data .card__change .card__percentage {
-  color: hsl(163, 72%, 41%);
+  color: "";
   font-size: 0.75rem;
   font-weight: 700;
 }

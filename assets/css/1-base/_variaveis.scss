@@ -31,3 +31,38 @@ $inter: 'Inter', sans-serif;
     font-size: $font-size;
     font-weight: $font-weight;
 }
+
+/* Social Icons */
+.icon-facebook {
+    background-image: url(../../img/icon-facebook.svg);
+}
+
+.icon-twitter {
+    background-image: url(../../img/icon-twitter.svg);
+}
+
+.icon-instagram {
+    background-image: url(../../img/icon-instagram.svg);
+}
+
+.icon-youtube {
+    background-image: url(../../img/icon-youtube.svg);
+}
+
+/* Color */
+.up {
+    color: $LimeGreen;
+}
+
+.down {
+    color: $BrightRed!important;
+}
+
+/* Today Count Icons */
+.icon-up {
+    background-image: url(../../img/icon-up.svg);
+}
+
+.icon-down {
+    background-image: url(../../img/icon-down.svg);
+}

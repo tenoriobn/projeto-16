@@ -1,5 +1,9 @@
-const changeTheme = document.querySelector(".header__dark-mode-switch");
+const changeTheme = document.querySelector(".checkbox");
 
 changeTheme.addEventListener("click", () => {
-    console.log("fui clicado")
+    const body = document.querySelector("body");
+    const header = document.querySelector("header");
+
+    body.classList.toggle("light")
+    header.classList.toggle("light")
 })
