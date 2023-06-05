@@ -8,3 +8,25 @@ changeTheme.addEventListener("click", () => {
         element.classList.toggle("light");
     })
 })
+
+
+/*
+    ANTES DE PROSSEGUIR COM O RESTO O IDIEL É APLICAR O EVENTO DE DARK/LIGHT
+    ** Talvez criar uma lista de objetos com nome de cada tag que recebera a classe `light`
+        torne o processo de adicionar e remover a classe `light` mais simples. **
+*/
+
+/* 
+    1º Se tratando do `iconsocial` em vez de colocar o nome do icon `icon-facebook.svg`
+        - É mais simples colocar o nome da classe `icon-facebook` que vai tá carregando o background `icon-facebook.svg`.
+    2º A mesma coisa vale para o `iconcount´ que carrega a imagem do `icon-up.svg` ou `icon-down.svg`
+        Criar duas classes a `up` e `down` que vai carregar o background-imagem `icon-up.svg` ou `icon-down.svg`.
+*/
+
+
+/* 
+    1º Cada um dos 4 `article` além da classe `card` vai receber a classe de acordo com a rede social
+        - Assim é possível aplicar o border-top com a cor ideal e iniciar o objeto com o nome da rede social.
+        - Seguindo assim, as outras propriedades.
+    2º Em relação aos `cards` do `Overview` podemos nomear no objeto encurtando o nome das redes, ex: face, ytb, tw..
+*/
