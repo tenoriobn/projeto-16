@@ -162,7 +162,7 @@ table {
   margin-bottom: 1.5rem;
 }
 .header__branding.light {
-  border-color: DarkGrayishBlue;
+  border-color: hsl(230, 22%, 74%);
 }
 .header__branding .header__title {
   color: hsl(0, 0%, 100%);

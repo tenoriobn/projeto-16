@@ -40,7 +40,8 @@
 
 /*
     ANTES DE PROSSEGUIR COM O RESTO O IDIEL É APLICAR O EVENTO DE DARK/LIGHT
-
+    ** Talvez criar uma lista de objetos com nome de cada tag que recebera a classe `light`
+        torne o processo de adicionar e remover a classe `light` mais simples. **
 */
 
 /* 
