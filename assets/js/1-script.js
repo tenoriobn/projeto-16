@@ -9,7 +9,7 @@ changeTheme.addEventListener("click", () => {
     })
 })
 
-function createCard() {
+function createCardSection() {
     const cardSection = document.querySelector(".card-section");
 
     fetch('./assets/js/card-section.json')
@@ -65,7 +65,64 @@ function createCard() {
     })
 }
 
-createCard();
+function createCardOverview() {
+    const cardOverview = document.querySelector(".card__container");
+
+    fetch('./assets/js/overview-section.json')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(item => {
+            const { title, info: { cardvalue, cardpercentage } } = item;
+
+            const article = document.createElement('article');
+            article.classList.add('card');
+
+            const cardInfo = document.createElement('div');
+            cardInfo.classList.add('card__info');
+
+            const cardLabel = document.createElement('p');
+            cardLabel.classList.add('card__label');
+            cardLabel.textContent = `${title}`;
+
+            const cardIcon = document.createElement('span');
+            cardIcon.classList.add('card__icon', item.info.iconsocial);
+
+            const cardData = document.createElement('div');
+            cardData.classList.add('card__data');
+
+            const cardValue = document.createElement('h3');
+            cardValue.classList.add('card__value');
+            cardValue.textContent = `${cardvalue}`;
+
+            const cardChange = document.createElement('div');
+            cardChange.classList.add('card__change');
+
+            const cardChangeIcon = document.createElement('span');
+            cardChangeIcon.classList.add('card__icon', item.info.iconcount);
+
+            const cardPercentage = document.createElement('h4');
+            cardPercentage.classList.add('card__percentage', item.info.cardpercentagecolor);
+            cardPercentage.textContent = `${cardpercentage}`;
+
+            cardOverview.appendChild(article);
+            article.appendChild(cardInfo);
+            cardInfo.appendChild(cardLabel);
+            cardInfo.appendChild(cardIcon);
+
+            article.appendChild(cardData);
+            cardData.appendChild(cardValue);
+
+            cardData.appendChild(cardChange);
+            cardChange.appendChild(cardChangeIcon);
+
+            cardChange.appendChild(cardPercentage)
+
+        })
+    })
+}
+
+createCardSection();
+createCardOverview();
 
 /*
     ANTES DE PROSSEGUIR COM O RESTO O IDIEL É APLICAR O EVENTO DE DARK/LIGHT
@@ -79,7 +136,6 @@ createCard();
     2º A mesma coisa vale para o `iconcount´ que carrega a imagem do `icon-up.svg` ou `icon-down.svg`
         Criar duas classes a `up` e `down` que vai carregar o background-imagem `icon-up.svg` ou `icon-down.svg`.
 */
-
 
 /* 
     1º Cada um dos 4 `article` além da classe `card` vai receber a classe de acordo com a rede social

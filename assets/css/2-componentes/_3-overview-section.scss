@@ -21,10 +21,20 @@
             .card {
                 background-color: $DarkDesaturatedBlue;
                 border-radius: .25rem;
+                cursor: pointer;
+                
                 padding: 1.5rem;
+
+                &:hover {
+                    background-color: $DarkDesaturatedBlueHover;
+                }
 
                 &.light {
                     background-color: $LightGrayishBlue;
+
+                    &:hover {
+                        background-color: $LightGrayishBlueHover;
+                    }
                 }
 
                 &__info {

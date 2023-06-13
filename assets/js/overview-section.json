@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Page Views",
+        "info": {
+            "iconsocial": "icon-facebook",
+            "cardvalue": "87",
+            "iconcount": "icon-up",
+            "cardpercentagecolor": "up",
+            "cardpercentage": "3%"
+        }
+    },
+    {
+        "title": "Likes",
+        "info": {
+            "iconsocial": "icon-facebook",
+            "cardvalue": "52",
+            "iconcount": "icon-down",
+            "cardpercentagecolor": "down",
+            "cardpercentage": "2%"
+        }
+    },
+    {
+        "title": "Likes",
+        "info": {
+            "iconsocial": "icon-instagram",
+            "cardvalue": "5462",
+            "iconcount": "icon-up",
+            "cardpercentagecolor": "up",
+            "cardpercentage": "2257%"
+        }
+    },
+    {
+        "title": "Profile Views",
+        "info": {
+            "iconsocial": "icon-instagram",
+            "cardvalue": "52k",
+            "iconcount": "icon-up",
+            "cardpercentagecolor": "up",
+            "cardpercentage": "1375%"
+        }
+    },
+    {
+        "title": "Retweets",
+        "info": {
+            "iconsocial": "icon-twitter",
+            "cardvalue": "117",
+            "iconcount": "icon-up",
+            "cardpercentagecolor": "up",
+            "cardpercentage": "303%"
+        }
+    },
+    {
+        "title": "Likes",
+        "info": {
+            "iconsocial": "icon-twitter",
+            "cardvalue": "507",
+            "iconcount": "icon-up",
+            "cardpercentagecolor": "up",
+            "cardpercentage": "553%"
+        }
+    },
+    {
+        "title": "Likes",
+        "info": {
+            "iconsocial": "icon-youtube",
+            "cardvalue": "107",
+            "iconcount": "icon-down",
+            "cardpercentagecolor": "down",
+            "cardpercentage": "19%"
+        }
+    },
+    {
+        "title": "Total Views",
+        "info": {
+            "iconsocial": "icon-youtube",
+            "cardvalue": "1407",
+            "iconcount": "icon-down",
+            "cardpercentagecolor": "down",
+            "cardpercentage": "12%"
+        }
+    }
+]

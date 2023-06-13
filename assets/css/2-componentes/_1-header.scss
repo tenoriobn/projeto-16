@@ -93,6 +93,10 @@
 
             &.light {
                 background-image: linear-gradient(to right, $ToggleLightTheme 10%, $ToggleLightTheme 100%);
+
+                &:hover {
+                    background-image: linear-gradient(to right, hsl(210, 78%, 56%) 10%, hsl(146, 68%, 55%) 100%);
+                }
             }
         }
     }
